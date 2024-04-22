@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Your Stay</title>
+  
+  <style>
+    /* Add custom styles here */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ef6b12;
+      background: url("images/hotel-1330850_1920.jpg");
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #f5802c;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      margin: 20px auto;
+      max-width: 500px;
+      padding: 20px;
+      background-color: transparent; /* Transparent background */
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #ef6b12;
+      text-align: center;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #ef6b12; /* Label color */
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+    }
+    button[type="submit"] {
+      background-color: #ef6b12;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button[type="submit"]:hover {
+      background-color:#ef6b12;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Book Nest</h1>
+    <p>Book Your Stay Now!</p>
+  </header>
+  
+  <section>
+    <h2>Complete Your Booking</h2>
+    <form action="/post" method="post">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="checkinDate">Check-in Date:</label>
+        <input type="date" id="checkinDate" name="checkinDate" required>
+      </div>
+      <div class="form-group">
+        <label for="checkoutDate">Check-out Date:</label>
+        <input type="date" id="checkoutDate" name="checkoutDate" required>
+      </div>
+      <button type="submit">Confirm Booking</button>
+    </form>
+  </section>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Confirmed</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .booking-confirmed {
+      text-align: center;
+    }
+
+    .booking-confirmed h1 {
+      color: #008000;
+      font-size: 36px;
+    }
+
+    .booking-confirmed p {
+      margin-top: 10px;
+      color: #444;
+    }
+
+    .booking-confirmed img {
+      margin-top: 20px;
+      width: 100px;
+      animation: bounce 1s ease infinite;
+    }
+
+    @keyframes bounce {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="booking-confirmed">
+      <h1>Booking Confirmed!</h1>
+      <p>Your booking has been successfully confirmed.</p>
+      <img src="images\check.png" alt="Checkmark">
+    </div>
+  </div>
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+  });
+  
+  </script>
+</body>
+</html>
